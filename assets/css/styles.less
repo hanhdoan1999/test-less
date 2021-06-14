@@ -223,7 +223,16 @@ a {
         align-items: center;
         justify-content: start;
         margin-top: 100px;
-        margin-bottom: 50px ; //demo
+        // margin-bottom: 25px ; //demo
+
+        li:nth-child(1) {
+            margin-bottom: -2px;
+            padding: 20px 18px;
+            border-bottom: 2px solid red;
+            a {
+                color: @text-red;
+            }
+        }
 
         li{
             padding: 0 18px;
@@ -246,6 +255,7 @@ a {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+        width: 100%;
 
         .product-item {
             width: 25%;
