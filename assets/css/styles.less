@@ -15,10 +15,21 @@ a {
     text-decoration: none;
 }
 
+
+// --------------------------------------------------------------------------
+
+
 .text-format(@font-weight, @font-size){
     // line-height: @line-height;
     font-weight: @font-weight;
     font-size: @font-size;
+}
+
+.style-hr {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    border-width: 1px ;
 }
 
 @text-white : #ffffff;
@@ -29,6 +40,12 @@ a {
 @footer-bg-top: #222222;
 @footer-bg-bottom: #111111;
 
+
+
+// --------------------------------------------------------------------------
+
+
+
 .container {
     box-sizing: border-box;
     width: 100%;
@@ -37,7 +54,7 @@ a {
 
     .slider {
         position: relative;
-        height: 950px;
+        max-height: 950px;
     
         .navbar {
             width: 100%;
@@ -67,8 +84,6 @@ a {
 
             }
             
-
-
             .logo {
                 width: 200px;
                 height: 60px;
@@ -311,11 +326,14 @@ a {
     }
 }
 
+
 .client-say {
-    text-align: center;
-    margin-top: 38px;   
-    height: 567px;
+    margin: 38px auto 0;   
+    height: 450px;
+    max-width: 1170px;
+
     h1 {
+        text-align: center;
         margin-bottom: 50px;
         text-transform: capitalize;
         line-height: 30px;
@@ -323,41 +341,97 @@ a {
         .text-format(700, 36px)
     }
 
-    p {
-        width: 757px;
-        margin: 0 auto;
-        margin-top: 30px;
-        line-height: 30px;
-        color: @text-gray;
-        .text-format(400, 18);
+    .client-item {
+        text-align: center;
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+
+        }
+    
+        p:nth-child(2) {
+            width: 757px;
+            margin: 0 auto;
+            margin-top: 30px;
+            line-height: 30px;
+            color: @text-gray;
+            .text-format(400, 18);
+        }
+
+        p:nth-child(3){
+            padding: 27px 0 5px;
+            color: @text-black;
+            line-height: 30px;
+            .text-format(700, 18px)
+        }
+
+        p:nth-child(4){
+            color: @text-gray;
+            // line-height: 30px;
+            .text-format(400, 14px)
+        }
     }
 }
 
 
+.owl-dots {
+    // text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 100px;
+    .owl-dot {
+        margin: 0 5px;
+        background: @text-gray;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    .active {
+        margin: 0 5px;
+        background: @text-red;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+}
+
+
+
 .list-brand {
     max-width: 1170px;
-    height: 180px;
-    margin: 20px auto;
+    height: 105px;
+    margin: 38px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // margin: 20px 0; //demo
-
     .brand {
         overflow: hidden;
-        width: 160px;
-        height: 100px;
+        width: 166px;
+        height: 69px;
     }
 }
 
 
 footer {
-    height: 722px;
+    // height: 722px;
     text-align: center;
     background-color: @footer-bg-top;
 
     .footer-top {
-        height: 355px;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+        height: 294px;
         padding: 30px 0;
         p {
             width: 708px;
@@ -383,18 +457,21 @@ footer {
         }
     }
 
-    
-
     .footer-row {
+        height: 217px;
         max-width: 1170px;
         margin: 50px auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         width: 100%;
 
         .footer-colume {
             width: 25%;
+            width: 25%;
+            box-sizing: border-box;
+            padding: 0 10px;
             text-align: left;
 
             li span {
@@ -416,7 +493,7 @@ footer {
         text-align: center;
         background-color: @footer-bg-bottom;
         p {
-            padding: 18px 0;
+            padding: 10px 0;
             line-height: 30px;
             color: @text-gray;
             .text-format(400, 14px)

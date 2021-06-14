@@ -1,340 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gymax</title>
-    <link rel="stylesheet/less" type="text/css" href="./assets/css/styles.less">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="./assets/js/less.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
-    </style>
-</head>
-<body>
-    <div class="container">   
-            <div class="slider">
-                    <header class="navbar">
-                        <div class="navbar-inner">
-                            <div class="test">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="./assets/images/Logo.png" alt="Logo">
-                                    </a>
-                                </div>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Pages</a></li>
-                                    <li><a href="#">Classes</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contacts</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#"><i class="far fa-search"></i></a></li> <span style="color: #ffffff;">|</span>
-                                    <li><a href="#"><i class="far fa-shopping-basket"></i></a></li> <span style="color: #ffffff;">|</span>
-                                    <li><a href="#"><i class="far fa-user"></i></a></li> 
-                                </ul>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="slider-text">
-                        <h1>Dumbbells Shop</h1>
-                        <h2>Best body fitness</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> Ipsum has been the industry's standard dummy text ever since the 1500s,<br/> when an unknown printer</p>
-                        <button><a href="#">shop now</a></button>
-                    </div>
-                    <img src="./assets/images/image.png" alt="banner">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gymax</title>
+
+    <!-- Favicon -->
+    <link href="./assets/images/home.ico" rel="icon" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Libraries -->
+    <link
+      href="./assets/lib/owlcarousel/css/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- My Stylesheet -->
+    <link
+      rel="stylesheet/less"
+      type="text/css"
+      href="./assets/css/styles.less"
+    />
+  </head>
+  <body>
+    <div class="container">
+    <!-- Header + Slider Start -->
+      <div class="slider">
+        <header class="navbar">
+          <div class="navbar-inner">
+            <div class="test">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./assets/images/Logo.png" alt="Logo" />
+                </a>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#"><i class="far fa-search"></i></a>
+                </li>
+                <span style="color: #ffffff">|</span>
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <span style="color: #ffffff">|</span>
+                <li>
+                  <a href="#"><i class="far fa-user"></i></a>
+                </li>
+              </ul>
             </div>
-
-    
-            
-            <section class="category-product">
-                <div class="categoty-product-box">
-                    <div class="category-product-inner">
-                    <img src="./assets/images/category_product_1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="categoty-product-box">
-                    <div class="category-product-inner">                        
-                    <img src="./assets/images/icon_2.png" alt="">
-                    <h1>Strength</h1>
-                    <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry.</p>
-                    </div>
-                </div>
-                <div class="categoty-product-box">
-                    <div class="category-product-inner">
-                    <img src="./assets/images/category_product_3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="categoty-product-box">
-                    <div class="category-product-inner">
-                    <img src="./assets/images/icon_1.png" alt="">
-                    <h1>Dumbbells</h1>
-                    <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry.</p>
-                    </div>
-                </div>
-                <div class="categoty-product-box">
-                    <div class="category-product-inner">
-                    <img src="./assets/images/category_product_2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="categoty-product-box">
-                    <div class="category-product-inner">
-                    <img src="./assets/images/icon_3.png" alt="">
-                    <h1>Power rack & cages</h1>
-                    <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="product">
-                <ul class="tab-bar">
-                    <li>
-                        <a href="#">Top seller</a>
-                    </li>
-                    <li>
-                        <a href="#">Featured</a>
-                    </li>
-                    <li>
-                        <a href="#">Most review</a>
-                    </li>
-                </ul>
-
-                <div class="list-products">
-                    <div class="product-item">
-                        <div class="product-img">
-                            <ul class="list-icon">
-                                <li><a href="#"><i class="far fa-shopping-basket"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                            </ul>
-                            <img src="./assets/images/product_1.jpg" alt="product_1">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-des">
-                                <p>Body Champ Cardic</p>
-                                <p style="font-weight: bold;">$242.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-img">
-                            <ul class="list-icon">
-                                <li><a href="#"><i class="far fa-shopping-basket"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                            </ul>
-                            <img src="./assets/images/product_2.jpg" alt="product_1">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-des">
-                                <p>Body Solid GCEC340</p>
-                                <p style="font-weight: bold;">$214.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-img">
-                            <ul class="list-icon">
-                                <li><a href="#"><i class="far fa-shopping-basket"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                            </ul>
-                            <img src="./assets/images/product_3.jpg" alt="product_1">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-des">
-                                <p>Bowflex BXE116 Elliptical</p>
-                                <p style="font-weight: bold;">$421.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-img">
-                            <ul class="list-icon">
-                                <li><a href="#"><i class="far fa-shopping-basket"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                            </ul>
-                            <img src="./assets/images/product_4.jpg" alt="product_1">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-des">
-                                <p>ETHOS GHD</p>
-                                <p style="font-weight: bold;">$152.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-img">
-                            <ul class="list-icon">
-                                <li><a href="#"><i class="far fa-shopping-basket"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                            </ul>
-                            <img src="./assets/images/product_5.jpg" alt="product_1">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-des">
-                                <p>AFG Pro 7.2AI Incline</p>
-                                <p style="font-weight: bold;">$252.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-img">
-                            <ul class="list-icon">
-                                <li><a href="#"><i class="far fa-shopping-basket"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                            </ul>
-                            <img src="./assets/images/product_6.jpg" alt="product_1">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-des">
-                                <p>Weight Bench</p>
-                                <p style="font-weight: bold;">$412.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-img">
-                            <ul class="list-icon">
-                                <li><a href="#"><i class="far fa-shopping-basket"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                            </ul>
-                            <img src="./assets/images/product_7.jpg" alt="product_1">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-des">
-                                <p>ProForm Hiit Trainer Lite 5.9</p>
-                                <p style="font-weight: bold;">$300.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item">
-                        <div class="product-img">
-                            <ul class="list-icon">
-                                <li><a href="#"><i class="far fa-shopping-basket"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                            </ul>
-                            <img src="./assets/images/product_8.jpg" alt="product_1">
-                        </div>
-                        <div class="product-info">
-                            <div class="product-des">
-                                <p>Fitness Gear Pro</p>
-                                <p style="font-weight: bold;">$124.00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="client-say">
-                <h1>see what they said about us</h1>
-                <img src="./assets/images/Base.png" alt="user">
-                <p>“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me."</p>
-                <p style="font-weight: bold;">LINA</p>
-                <p>Happy clients</p>
-            </section>
+          </div>
+        </header>
+        <div class="slider-text">
+          <h1>Dumbbells Shop</h1>
+          <h2>Best body fitness</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.<br />
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s,<br />
+            when an unknown printer
+          </p>
+          <button><a href="#">shop now</a></button>
+        </div>
+        <img src="./assets/images/image.png" alt="banner" />
+      </div>
+    <!-- Header + Slider End -->
 
 
-            <hr>
-            <section class="list-brand">
-                <div class="brand">
-                    <img src="./assets/images/brand_1.jpg" alt="brand">
-                </div>
-                <div class="brand">
-                    <img src="./assets/images/brand_2.jpg" alt="brand">
-                </div>
-                <div class="brand">
-                    <img src="./assets/images/brand_3.jpg" alt="brand">
-                </div>
-                <div class="brand">
-                    <img src="./assets/images/brand_4.jpg" alt="brand">
-                </div>
-                <div class="brand">
-                    <img src="./assets/images/brand_5.jpg" alt="brand">
-                </div>
-                <div class="brand">
-                    <img src="./assets/images/brand_6.jpg" alt="brand">
-                </div>
-            </section>
+    <!-- Category Product Start -->
+      <section
+        class="category-product"
+        style="box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px"
+      >
+        <div class="categoty-product-box">
+          <div class="category-product-inner">
+            <img src="./assets/images/category_product_1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="categoty-product-box">
+          <div class="category-product-inner">
+            <img src="./assets/images/icon_2.png" alt="" />
+            <h1>Strength</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the<br />
+              printing and typesetting industry.
+            </p>
+          </div>
+        </div>
+        <div class="categoty-product-box">
+          <div class="category-product-inner">
+            <img src="./assets/images/category_product_3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="categoty-product-box">
+          <div class="category-product-inner">
+            <img src="./assets/images/icon_1.png" alt="" />
+            <h1>Dumbbells</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the<br />
+              printing and typesetting industry.
+            </p>
+          </div>
+        </div>
+        <div class="categoty-product-box">
+          <div class="category-product-inner">
+            <img src="./assets/images/category_product_2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="categoty-product-box">
+          <div class="category-product-inner">
+            <img src="./assets/images/icon_3.png" alt="" />
+            <h1>Power rack & cages</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the<br />
+              printing and typesetting industry.
+            </p>
+          </div>
+        </div>
+      </section>
+    <!-- Category Product End -->
 
 
-            <footer>
-                <div class="footer-top">
-                    <a href="#"><img src="./assets/images/logo.jpg" alt="Logo"></a>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
-                    <ul class="social-icon">
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-                    <hr>
-                    <div class="footer-row">
-                        <div class="footer-colume">
-                            <ul>
-                                <li><span>Contact us</span></li>
-                                <li><a href="#"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;200 Lincoln Ave, Salinas, CA 93901</a></li>
-                                <li><a href="#"><i class="fas fa-phone"></i> &nbsp;&nbsp;023 32423 223</a></li>
-                                <li><a href="#"><i class="fad fa-envelope"></i> &nbsp;&nbsp; gymax@example.com</a></li>
-                                <li><a href="#"><i class="fas fa-clock"></i> &nbsp;&nbsp;9:00 - 20:00 All day</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-colume">
-                            <ul>
-                                <li><span>MY ACCOUNT</span></li>
-                                <li><a href="#">My account</a></li>
-                                <li><a href="#">Check out</a></li>
-                                <li><a href="#">register</a></li>
-                                <li><a href="#">Login</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-colume">
-                            <ul>
-                                <li><span>INFORMATION</span></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Terms of user</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-colume">
-                            <ul>
-                                <li><span>QUICK LINK</span></li>
-                                <li><a href="#">New user</a></li>
-                                <li><a href="#">Help center</a></li>
-                                <li><a href="#">Report spam</a></li>
-                                <li><a href="#">FAQs</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        <p>Copyright © 2019 Gymax - Design by <a href="#">ArrowHitech</a> - All Rights Reserved</p>
-                    </div>
-            </footer>
+    <!-- List Product Start -->
+      <section class="product">
+        <ul class="tab-bar">
+          <li>
+            <a href="#">Top seller</a>
+          </li>
+          <li>
+            <a href="#">Featured</a>
+          </li>
+          <li>
+            <a href="#">Most review</a>
+          </li>
+        </ul>
+
+        <hr class="style-hr" />
+
+        <div class="list-products">
+          <div class="product-item">
+            <div class="product-img">
+              <ul class="list-icon">
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-exchange"></i></a>
+                </li>
+              </ul>
+              <img src="./assets/images/product_1.jpg" alt="product_1" />
+            </div>
+            <div class="product-info">
+              <div class="product-des">
+                <p>Body Champ Cardic</p>
+                <p style="font-weight: bold">$242.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-img">
+              <ul class="list-icon">
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-exchange"></i></a>
+                </li>
+              </ul>
+              <img src="./assets/images/product_2.jpg" alt="product_1" />
+            </div>
+            <div class="product-info">
+              <div class="product-des">
+                <p>Body Solid GCEC340</p>
+                <p style="font-weight: bold">$214.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-img">
+              <ul class="list-icon">
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-exchange"></i></a>
+                </li>
+              </ul>
+              <img src="./assets/images/product_3.jpg" alt="product_1" />
+            </div>
+            <div class="product-info">
+              <div class="product-des">
+                <p>Bowflex BXE116 Elliptical</p>
+                <p style="font-weight: bold">$421.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-img">
+              <ul class="list-icon">
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-exchange"></i></a>
+                </li>
+              </ul>
+              <img src="./assets/images/product_4.jpg" alt="product_1" />
+            </div>
+            <div class="product-info">
+              <div class="product-des">
+                <p>ETHOS GHD</p>
+                <p style="font-weight: bold">$152.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-img">
+              <ul class="list-icon">
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-exchange"></i></a>
+                </li>
+              </ul>
+              <img src="./assets/images/product_5.jpg" alt="product_1" />
+            </div>
+            <div class="product-info">
+              <div class="product-des">
+                <p>AFG Pro 7.2AI Incline</p>
+                <p style="font-weight: bold">$252.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-img">
+              <ul class="list-icon">
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-exchange"></i></a>
+                </li>
+              </ul>
+              <img src="./assets/images/product_6.jpg" alt="product_1" />
+            </div>
+            <div class="product-info">
+              <div class="product-des">
+                <p>Weight Bench</p>
+                <p style="font-weight: bold">$412.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-img">
+              <ul class="list-icon">
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-exchange"></i></a>
+                </li>
+              </ul>
+              <img src="./assets/images/product_7.jpg" alt="product_1" />
+            </div>
+            <div class="product-info">
+              <div class="product-des">
+                <p>ProForm Hiit Trainer Lite 5.9</p>
+                <p style="font-weight: bold">$300.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-img">
+              <ul class="list-icon">
+                <li>
+                  <a href="#"><i class="far fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-exchange"></i></a>
+                </li>
+              </ul>
+              <img src="./assets/images/product_8.jpg" alt="product_1" />
+            </div>
+            <div class="product-info">
+              <div class="product-des">
+                <p>Fitness Gear Pro</p>
+                <p style="font-weight: bold">$124.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- List Product End -->
+
+
+    <!-- Client Say Start -->
+      <section class="client-say">
+        <h1>see what they said about us</h1>
+        <div class="owl-carousel client-carousel">
+          <div class="client-item">
+            <img src="./assets/images/client_1.png" alt="user" />
+            <p>
+              “Good services. I bought a bicycle with a wrong but they accepted
+              free return for me and exchange a new product for me."
+            </p>
+            <p>LINA</p>
+            <p>Happy clients</p>
+          </div>
+          <div class="client-item">
+            <img src="./assets/images/client_2.jpg" alt="user" />
+            <p>
+              “Good services. I bought a bicycle with a wrong but they accepted
+              free return for me and exchange a new product for me."
+            </p>
+            <p>JIMIN</p>
+            <p>Happy clients</p>
+          </div>
+          <div class="client-item">
+            <img src="./assets/images/client_3.jpg" alt="user" />
+            <p>
+              “Good services. I bought a bicycle with a wrong but they accepted
+              free return for me and exchange a new product for me."
+            </p>
+            <p>JENNIE</p>
+            <p>Happy clients</p>
+          </div>
+        </div>
+      </section>
+    <!-- Client Say End -->
+
+
+    <!-- List Brand Start -->   
+      <hr class="style-hr" />
+      <section class="list-brand">
+        <div class="brand">
+          <img src="./assets/images/brand_1.jpg" alt="brand" />
+        </div>
+        <div class="brand">
+          <img src="./assets/images/brand_2.jpg" alt="brand" />
+        </div>
+        <div class="brand">
+          <img src="./assets/images/brand_3.jpg" alt="brand" />
+        </div>
+        <div class="brand">
+          <img src="./assets/images/brand_4.jpg" alt="brand" />
+        </div>
+        <div class="brand">
+          <img src="./assets/images/brand_5.jpg" alt="brand" />
+        </div>
+        <div class="brand">
+          <img src="./assets/images/brand_6.jpg" alt="brand" />
+        </div>
+      </section>
+    <!-- List Brand End -->   
+
+
+    <!-- Footer Start -->   
+      <footer>
+        <div class="footer-top">
+          <a href="#"><img src="./assets/images/logo.jpg" alt="Logo" /></a>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer
+          </p>
+          <ul class="social-icon">
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="style-hr" />
+        <div class="footer-row">
+          <div class="footer-colume">
+            <ul>
+              <li><span>Contact us</span></li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;200 Lincoln
+                  Ave, Salinas, CA 93901</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-phone"></i> &nbsp;&nbsp;023 32423 223</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fad fa-envelope"></i> &nbsp;&nbsp;
+                  gymax@example.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-clock"></i> &nbsp;&nbsp;9:00 - 20:00 All
+                  day</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-colume">
+            <ul>
+              <li><span>MY ACCOUNT</span></li>
+              <li><a href="#">My account</a></li>
+              <li><a href="#">Check out</a></li>
+              <li><a href="#">register</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-colume">
+            <ul>
+              <li><span>INFORMATION</span></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Terms of user</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-colume">
+            <ul>
+              <li><span>QUICK LINK</span></li>
+              <li><a href="#">New user</a></li>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Report spam</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright © 2019 Gymax - Design by <a href="#">ArrowHitech</a> - All
+            Rights Reserved
+          </p>
+        </div>
+      </footer>
+    <!-- Footer End -->   
+
     </div>
-</body>
-	</html>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/less.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
